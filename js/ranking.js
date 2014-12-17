@@ -11,9 +11,10 @@ $(document).ready(function() {
      });
 });
 
+var headers = [];
 function processData(allText) {
     var allTextLines = allText.split(/\r\n|\n/);
-    var headers = allTextLines[0].split(',');
+    headers = allTextLines[0].split(',');
     var lines = [];
 
     for (var i=1; i<allTextLines.length; i++) {
@@ -72,7 +73,7 @@ function drawLines(linea){
 function datos(usuario){
 	dato = 
 	{
-		labels : ["Ene","Feb","Mar","Abr","May","Jun","Jul","Ago","Sep","Oct","Nov","Dic"],
+		labels : headers.slice(5,4+13),
 		 // labels : ["","","","","","","","","","","",""],
 		datasets : [
 			{
