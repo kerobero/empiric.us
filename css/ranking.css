@@ -1,0 +1,23 @@
+canvas{
+	height:auto !important;
+	width:auto !important;
+}
+#rank{
+	float: left;
+	display: block;
+	position:relative;
+	width: 100%;    
+    top:5%;    	
+}
+
+thead{
+	font-weight: 900;
+}
+tbody > tr:hover{
+	background: #FFEAAA;
+}
+
+tr > td {
+	border-right: 1px solid #ddd;
+	vertical-align: middle !important;	
+} 	
